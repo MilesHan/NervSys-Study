@@ -14,8 +14,9 @@ Source code: https://github.com/NervSys/NervSys
 **示例**
 > http://host_address/api.php?cmd=demo/fruit-color-smell-guess&color=yellow&smell=sweet
 
-demo/fruit-color-smell-guess: demo项目下 fruit 类，color, smell, guess 方法
-color=yellow、smell=sweet: color、smell方法执行时的条件
+1. demo/fruit-color-smell-guess: demo项目下 fruit 类，color, smell, guess 方法
+
+2. color=yellow、smell=sweet: color、smell方法执行时的条件
 
 ### base001
 
