@@ -5,7 +5,7 @@
 * 	1：开发环境（显示所有的错误，警告，提示）
 *	2：优化开发（显示所有的错误，警告，提示和运行时的值）
 */
-define('DEBUG', 3);
+define('DEBUG', 1);
 
 //基本设置
 
@@ -99,6 +99,8 @@ function debug(string $module, string $message): void{
 
 	unset($module, $message);
 }
+
+
 
 
 

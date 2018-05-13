@@ -2,10 +2,13 @@
 namespace core\ctr;
 
 class router{
-	//定义参数
+	//控制命令
 	public static $cmd = '';
+	//数据
 	public static $data = [];
+	//返回结果
 	public static $result = [];
+	//响应头
 	public static $header = [];
 
 	protected static $conf_cgi = [];
@@ -77,7 +80,7 @@ class router{
 
 		//加载cli配置
 		if (isset($conf['CLI'])) {
-			self::$conf_cgi = &$conf['CLI'];
+			self::$conf_cli = &$conf['CLI'];
 		}
 
 		unset($path, $conf);
@@ -119,8 +122,6 @@ class router{
 
 	/**
 	 * 检查 HTTPS 协议
-	 *
-	 * @return array
 	 */
 	public static function is_https(): bool{
 		return (isset($_SERVER['HTTPS']) && 'on' === $_SERVER['HTTPS']) || (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && 'https' === $_SERVER['HTTP_X_FORWARDED_PROTO']);

@@ -18,7 +18,7 @@ require __DIR__.'/core/conf.php';
 \core\ctr\router::load_conf();
 
 //执行进程
-// 'cli' !== PHP_SAPI ? \core\ctr\router\cgi::run() : \core\ctr\router\cli::run();
+'cli' !== PHP_SAPI ? \core\ctr\router\cgi::run() : \core\ctr\router\cli::run();
 
 //输出结果
 \core\ctr\router::output();
